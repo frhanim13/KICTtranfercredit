@@ -1,1 +1,1 @@
-# KICTtransfercredit
+# SimpliCredit

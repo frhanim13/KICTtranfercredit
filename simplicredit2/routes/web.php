@@ -72,6 +72,6 @@ Route::get('/student/delete/{id}', [prevUniController::class,'destroy']);
 Route::get('/student/letter', [applicationController::class,'detailsComplete2']);
 Route::get('/student/edit-action/{id}', [applicationController::class,'show2']);
 Route::post('/student/editcourse',[applicationController::class,'update2']);
-Route::get('/student/delete/{id}', [applicationController::class, 'deleteCourse']);
+Route::get('/student/delete1/{id}', [applicationController::class, 'deleteCourse']);
 Route::get('/admin/university',[applicationController::class,'university']);
 //Route::get('redirects', [applicationController::class, 'getTotalPendingApplications']);

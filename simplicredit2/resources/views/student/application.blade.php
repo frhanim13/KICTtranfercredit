@@ -114,6 +114,7 @@
                                 </div>
 
                                 </div>
+                                <button type="submit" class="btn btn-primary mt-3 mb-32">Submit</button>
                             </div>
                         @else
                             <div class="alert alert-danger">
@@ -122,7 +123,8 @@
                         @endif
 
                         @if ($totalUni >= 1)
-                            <button type="submit" class="btn btn-primary">Submit</button>
+
+
                         @endif
                     </div>
                     <!-- /.card-body -->
@@ -178,7 +180,7 @@
                                     {{ csrf_field() }}
                                     <input type ="hidden" name="cid"  value="{{$each -> id}}">
                                     <a type="button" class="btn btn-block btn-info" href="{{url('/student/edit-action/'.$each->id)}}"><i class="fa fa-edit"></i> Edit</a>
-                                    <a type="button" class="btn btn-block btn-danger" href="{{ url('/student/delete/'.$each->id) }}" onclick="return confirm('Are you sure you want to delete this course?')"><i class="fa fa-trash"></i> Delete</a>
+                                    <a type="button" class="btn btn-block btn-danger" href="{{ url('/student/delete1/'.$each->id) }}" onclick="return confirm('Are you sure you want to delete this course?')"><i class="fa fa-trash"></i> Delete</a>
                                     @else
                                     <button type="button" class="btn btn-block btn-info" disabled><i class="fa fa-edit"></i> Edit</button>
                                     <button type="button" class="btn btn-block btn-danger" disabled><i class="fa fa-trash"></i> Delete</button>

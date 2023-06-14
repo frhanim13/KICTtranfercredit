@@ -1,0 +1,3 @@
+@extends('student.index')
+
+
